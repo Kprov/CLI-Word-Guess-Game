@@ -1,4 +1,4 @@
-var userGuess = process.argv[2];
+// var userGuess = process.argv[2];
 
 function Letter(character, guessed){
     this.character = character;
@@ -10,15 +10,17 @@ function Letter(character, guessed){
             console.log("_");
         }
     }
-    this.check = function (){
+    this.guess = function (){
 
         if (userGuess === this.character){
-            this.guessed = true;
+            this.guessed === true;
+        } else {
+            this.guessed === false;
         }
     }
 }
 
-var guess = new Letter("a", false);
+// var guess = new Letter("f", true);
 
-guess.check();
-guess.toString();
+// guess.guess();
+// guess.toString();
